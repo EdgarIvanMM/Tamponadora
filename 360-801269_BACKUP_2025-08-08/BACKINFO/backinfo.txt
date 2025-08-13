@@ -1,0 +1,42 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: /hd0a/TEMP/backup.633937
+# 2025-08-08  20:03:28
+#
+>>SYSTEM_ID:
+360-801269
+
+>>PRODUCTS_ID:
+RobotWare Version: 6.12.02.00
+
+  RobotWare Base
+  709-1 DeviceNet Master/Slave
+  840-3 PROFINET Anybus Device
+  608-1 World Zones
+  610-1 Independent Axis
+  613-1 Collision Detection
+  Motor Commutation
+  Service Info System
+  Pendelum Calibration
+  Drive System IRB 120/140/260/360/910SC/1200/1400/1520/1600/1660ID IRC5 Compact
+  IRB 360-6/1600 Standard
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+PROC.cfg
+MMC.cfg
+EIO.cfg
+SIO.cfg
+MOC.cfg
+
+
+>>TASK1: (T_ROB1,NewProgramName,)
+SYSMOD/user.sys @ 
+PROGMOD/MainModule.mod @ 
+
+
+>>EOF:

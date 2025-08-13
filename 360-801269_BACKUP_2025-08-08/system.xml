@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemProperties>
+  <SystemName>360-801269</SystemName>
+  <SerialNo>360-801269</SerialNo>
+  <UsedMedia>
+    <Media path="RobotWare_6.12.2013" name="RobotWare" version="6.12.2013">
+    </Media>
+  </UsedMedia>
+  <ControlModule>
+    <Option descr="RobotWare Base">
+    </Option>
+    <Option descr="709-1 DeviceNet Master/Slave">
+    </Option>
+    <Option descr="840-3 PROFINET Anybus Device">
+    </Option>
+    <Option descr="608-1 World Zones">
+    </Option>
+    <Option descr="610-1 Independent Axis">
+    </Option>
+    <Option descr="613-1 Collision Detection">
+    </Option>
+  </ControlModule>
+  <DriveModule>
+    <Name>Robot1</Name>
+    <Option descr="Motor Commutation">
+    </Option>
+    <Option descr="Service Info System">
+    </Option>
+    <Option descr="Pendelum Calibration">
+    </Option>
+    <Option descr="Drive System IRB 120/140/260/360/910SC/1200/1400/1520/1600/1660ID IRC5 Compact">
+    </Option>
+    <Option descr="IRB 360-6/1600 Standard">
+    </Option>
+  </DriveModule>
+</SystemProperties>

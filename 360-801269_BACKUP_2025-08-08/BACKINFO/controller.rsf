@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ProductSettings version="1.0">
+  <Products>
+    <Product name="RobotWare" version="6.12.2013" id="abb.robotics.robotware">
+      <Settings>
+        <Setting id="abb.robotics.robotware.base" displayName="RobotWare Base" robot="1" />
+        <Setting id="abb.robotics.robotware.options.devicenet.mssingle" displayName="709-1 DeviceNet Master/Slave" robot="1" />
+        <Setting id="abb.robotics.robotware.options.profinet.fieldbusadapter" displayName="840-3 PROFINET Anybus Device" robot="1" />
+        <Setting id="abb.robotics.robotware.options.worldzones" displayName="608-1 World Zones" robot="1" />
+        <Setting id="abb.robotics.robotware.options.independentaxis" displayName="610-1 Independent Axis" robot="1" />
+        <Setting id="abb.robotics.robotware.options.collisiondetection" displayName="613-1 Collision Detection" robot="1" />
+        <Setting id="abb.robotics.robotware.options.motorcommutation" displayName="Motor Commutation" robot="1" />
+        <Setting id="abb.robotics.robotware.options.sis" displayName="Service Info System" robot="1" />
+        <Setting id="abb.robotics.robotware.options.calpend" displayName="Pendelum Calibration" robot="1" />
+        <Setting id="abb.robotics.robotware.drivesystems.drive.dc430a1.du430a1.dm430a" displayName="Drive System IRB 120/140/260/360/910SC/1200/1400/1520/1600/1660ID IRC5 Compact" robot="1" />
+        <Setting id="abb.robotics.robotware.robots.irb360.6-1600.standard" displayName="IRB 360-6/1600 Standard" robot="1" />
+      </Settings>
+    </Product>
+  </Products>
+</ProductSettings>
