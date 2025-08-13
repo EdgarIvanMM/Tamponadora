@@ -1,38 +1,92 @@
 MODULE MainModule
-	CONST robtarget home:=[[-443.02,127.69,-1122.77],[0,0.440754,-0.897628,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget home10:=[[-443.03,127.69,-1122.76],[0,0.440744,-0.897633,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p1:=[[-409.78,-364.69,-1252.71],[0,0.440744,-0.897633,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p2:=[[124.52,148.47,-1252.70],[0,0.440754,-0.897628,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p11:=[[-443.03,127.69,-1122.77],[0,0.440744,-0.897633,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p12:=[[124.52,148.47,-1252.70],[0,0.440754,-0.897628,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p22:=[[124.52,148.47,-1306.10],[0,0.440765,-0.897622,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p3:=[[124.55,148.39,-1236.49],[0,0.959453,0.281869,0],[0,3,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p4:=[[19.94,110.83,-1335.72],[0,0.987354,-0.158531,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p14:=[[-448.40,-12.53,-1187.77],[0,0.440744,-0.897633,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p24:=[[19.94,110.85,-1326.02],[0,0.305713,-0.952124,0],[0,9,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget p34:=[[19.94,110.85,-1326.02],[0,0.305735,-0.952116,0],[0,9,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget home20:=[[-198.13,-94.19,-1192.70],[0,0.440502,-0.897752,0],[0,5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget home30:=[[-198.13,-94.18,-1282.38],[0,0.885709,-0.46424,0],[0,8,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST jointtarget jpos10:=[[23.2346,-5.62473,7.22907,775.304,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	PERS num rapid:=0;
-	CONST speeddata VRoscado:=[4500,5500,5000,1000];
-	CONST robtarget homeIv:=[[0.21,0.04,-1230.82],[0,1,-4.16494E-06,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget taparCeroGR:=[[0.21,0.04,-1297.50],[0,1,-4.16494E-06,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget taparNoventaGR:=[[0.20,0.03,-1297.50],[0,0.697004,-0.717067,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget taparCuarentayCincoGR:=[[0.20,0.03,-1297.51],[0,0.923637,-0.383268,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar180GR:=[[0.19,0.03,-1297.52],[0,7.81928E-06,-1,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar360GR:=[[0.17,0.02,-1297.54],[0,0.999983,-0.00591235,0],[0,4,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar45GRNegativo:=[[0.17,0.02,-1297.53],[0,0.921565,0.388225,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar90GRNegativo10:=[[0.16,0.02,-1297.54],[0,0.701179,0.712986,0],[0,-2,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar180GRNegativo:=[[0.16,0.02,-1297.55],[0,0.00794129,-0.999968,0],[0,-3,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	CONST robtarget tapar360GRNegativo:=[[0.16,0.02,-1297.55],[0,1,0.000966557,0],[0,-5,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-	PROC main()
-		MoveJ home, v2500, z50, tool0;
-		MoveJ home20, VRoscado, z50, tool0;
-		WaitRob\InPos;
-		!MoveL home30, vmax, fine, tool0;
-		MoveAbsJ jpos10\NoEOffs, VRoscado, fine, tool0;
-		WaitRob\ZeroSpeed;
-		MoveJ home20, v2500, z50, tool0;
+    ! Proyecto: Tamponadora CATOEX | TIA ROBOTICS.
+
+    ! Historial de modificaciones:
+    ! Fecha       | Ingeniero          | Descripción
+    ! ------------|--------------------|-------------------------------------------------------------------------------------
+    ! 2025-08-13  | Ivan Martinez      | Primera version sin coordenadas de camara.
+    ! 0000-00-00  | ?????????          | 
+    ! 0000-00-00  | ?????????          | 
+    ! 0000-00-00  | ?????????          | 
+    ! -----------------------------------------------------------------------------------------------------------------------    
+    !
+    ! Proyecto en GitGub: https://github.com/EdgarIvanMM/PaletizadoCajasConFrascos
+    !
+    ! NOTA: REGISTRAR TODO CAMBIO REALIZADO PARA MANTENER TRAZABILIDAD.
+    
+    !Wobj 
+	TASK PERS wobjdata wobjConveyor:=[FALSE,TRUE,"",[[370.426,498.747,-1420.71],[7.50996E-05,0.891233,-0.453547,4.57222E-05]],[[0,0,0],[1,0,0,0]]];
+    !TASK PERS wobjdata wobjConveyor:=[FALSE,TRUE,"",[[-142.767,103.657,-1415.01],[0.00864339,0.901113,-0.433479,-0.00414332]],[[0,0,0],[1,0,0,0]]];
+    
+	!TOOLDATA
+    TASK PERS tooldata tr:=[TRUE,[[0,0,140],[1,0,0,0]],[5,[0,0,0],[1,0,0,0],0,0,0]];
+	
+    !robtargets
+    CONST robtarget homeIv:=[[0.21,0.04,-1130.82],[0,1,-4.16494E-06,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget inicioRosca:=[[0.21,0.04,-1230.82],[0,1,-4.16494E-06,0],[0,8,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget tomarTapa:=[[235.88,-663.81,-1286.45],[0,1,-0.000261826,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget SalidatomarTapa:=[[235.93,-663.85,-1107.57],[0,1,0.000217543,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget llegada:=[[385.07,247.33,-1107.57],[0,1,-0.000124007,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget HomePrueba:=[[262.74,-273.09,-1107.04],[0,1,-0.000171944,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget posListoRosca:=[[385.06,247.32,-1142.35],[0,1,-0.000153968,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    !Variables de velocidad.
+	CONST speeddata VRoscado := [50, 8000, 5000, 1000]; !Aumento de velocidad en el segundo parametro.
+    
+    !Variables
+    VAR num tor;
+    VAR num giro := 360;
+    
+!---------------------------------------------------------------------------------
+                                                                                !--------------------------------------------------------------------------------
+    
+    PROC main()
+        MoveL HomePrueba, v2500, z50, tool0;
+        AgarrarTapa;
+        DejarTapa;
 	ENDPROC
+    
+    PROC AgarrarTapa()
+        MoveL SalidatomarTapa, v2500, z50, tool0;
+        MoveJ tomarTapa, v500, z50, tool0;
+        WaitRob \Inpos;
+        WaitTime 1;
+        MoveL SalidatomarTapa, v2500, z50, tool0;
+    ENDPROC
+    
+    PROC DejarTapa()
+        MoveL llegada, v2500, z50, tool0;
+        MoveL posListoRosca, v50, z50, tool0;
+        WaitRob \Inpos;
+        RoscarTapas;
+    ENDPROC
+    
+    PROC calcularTorque()
+        !Lectura de torque, revisar con herramienta.
+        tor := GetMotorTorque(4); !Se revisa torque de eje 4.
+    ENDPROC
+    
+    PROC RoscarTapas ()
+        VAR jointtarget jpos;
+        VAR robtarget pos_actual;
+    
+        !Girar 180 antes de la rosca. 
+    
+        ! --- Girar el eje 4 ---
+        jpos := CJointT();
+        jpos.robax.rax_4 := jpos.robax.rax_4 + giro;  ! Giro de 360°
+        MoveAbsJ jpos, VRoscado, z50, tool0;          ! Usa speeddata VRoscado
+        WaitRob \Inpos;
+        WaitTime 2;
+    
+        pos_actual := CRobT();  ! Captura la posición actual, incluyendo la rotación del eje 4.
+        pos_actual.trans.z := pos_actual.trans.z + 32;  ! Sube 32 mm en Z.
+        MoveJ pos_actual, v500, fine, tool0;  ! Sube con orientación actual
+    
+        ! --- Volver a 0 grados ---
+        jpos := CJointT();
+        jpos.robax.rax_4 := jpos.robax.rax_4 - giro;  ! Giro de 360°
+        MoveAbsJ jpos, VRoscado, z50, tool0;          ! Usa speeddata VRoscado
+    ENDPROC
+
 ENDMODULE

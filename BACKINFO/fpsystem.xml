@@ -54,8 +54,9 @@
       <PROP name="default" value="CtrlName" />
     </DATA>
     <DATA id="Program Editor">
-      <PROP name="HideDeclarations" value="False" />
+      <PROP name="HideDeclarations" value="True" />
       <PROP name="ProgramPath" value="ctrl:/hd0a/360-801269/Quesos/NewProgramName/NewProgramNamequesosfinal" />
+      <PROP name="ShowOnlyServiceRoutines" value="True" />
     </DATA>
     <DATA id="UASViewLevel">
       <PROP name="text" value="PARAM_TXT_UASVIEWLEVEL" />
@@ -82,7 +83,7 @@
       <PROP name="Last Assignment DataType" value="num" />
     </DATA>
     <DATA id="QuickSet">
-      <PROP name="IncrementToggle" value="Large" />
+      <PROP name="IncrementToggle" value="Medium" />
     </DATA>
     <DATA id="IO Filter">
       <PROP name="IOFilterLimit" value="100" />
