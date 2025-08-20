@@ -24,15 +24,13 @@
     <DATA id="UserSettings">
       <PROP name="RapidEditorFontIndex" value="5" />
     </DATA>
-    <DATA id="ViewInManFull">
-      <PROP name="text" value="PARAM_TXT_VIEWINMANFULL" />
-      <PROP name="dll" value="" />
-      <PROP name="type" value="" />
-    </DATA>
     <DATA id="ViewInAuto">
       <PROP name="text" value="PARAM_TXT_VIEWINAUTO" />
       <PROP name="dll" value="TpsViewProductionWnd.dll" />
       <PROP name="type" value="ABB.Robotics.Tps.Production.TpsViewProductionWnd" />
+    </DATA>
+    <DATA id="ChangeInstruction">
+      <PROP name="Last Assignment DataType" value="num" />
     </DATA>
     <DATA id="Programmable Key_2">
       <PROP name="type" value="None" />
@@ -79,11 +77,13 @@
       <PROP name="pressed" value="" />
       <PROP name="target" value="" />
     </DATA>
-    <DATA id="ChangeInstruction">
-      <PROP name="Last Assignment DataType" value="num" />
+    <DATA id="ViewInManFull">
+      <PROP name="text" value="PARAM_TXT_VIEWINMANFULL" />
+      <PROP name="dll" value="" />
+      <PROP name="type" value="" />
     </DATA>
     <DATA id="QuickSet">
-      <PROP name="IncrementToggle" value="Medium" />
+      <PROP name="IncrementToggle" value="Small" />
     </DATA>
     <DATA id="IO Filter">
       <PROP name="IOFilterLimit" value="100" />
